@@ -16,5 +16,13 @@ namespace WordCount
         {
             InitializeComponent();
         }
+
+        public int CountWords(string input)
+        {
+            int count = 0;
+
+
+            return count;
+        }
     }
 }
