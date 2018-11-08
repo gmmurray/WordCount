@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace WordCount
 {
-    static class Program
+    static class Word_Counter
     {
         /// <summary>
         /// Count Words in a String – Counts the number of individual words in a string. For added complexity read these strings in from a text file and generate a summary.
@@ -16,7 +16,7 @@ namespace WordCount
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new WordCount());
         }
     }
 }
