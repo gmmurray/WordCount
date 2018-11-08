@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace WordCount
 {
-    public partial class Form1 : Form
+    public partial class WordCount : Form
     {
-        public Form1()
+        public WordCount()
         {
             InitializeComponent();
+        }
+
+        public int CountWords(string input)
+        {
+            int count = 0;
+
+
+            return count;
         }
     }
 }
