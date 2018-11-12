@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -52,13 +53,15 @@ namespace WordCount
 
         private void btnFile_Click(object sender, EventArgs e)
         {
-            string fileLocation = @"C:\Users\trini\Desktop\test.txt";
-            string fileText = System.IO.File.ReadAllText(fileLocation);
-            int wordCount = CountWords(fileText);
+            openFile.Filter = "Text Files|*.txt";
+            openFile.Title = "Select a Text File";
 
-            fileResultList.Items.Add("Number of Words in File: " + wordCount.ToString());
-            //MessageBox.Show(fileLocation);
+            openFile.ShowDialog();
+            string fullPath = openFile.FileName;
 
+            int wordCount = CountWords(System.IO.File.ReadAllText(fullPath));
+            fileResultList.Items.Add("Number of Words in " + Path.GetFileName(fullPath) + ": " + wordCount.ToString());
         }
+
     }
 }

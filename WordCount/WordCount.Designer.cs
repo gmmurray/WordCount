@@ -35,6 +35,7 @@
             this.grpUpload = new System.Windows.Forms.GroupBox();
             this.fileResultList = new System.Windows.Forms.ListBox();
             this.btnFile = new System.Windows.Forms.Button();
+            this.openFile = new System.Windows.Forms.OpenFileDialog();
             this.groupTxtBox.SuspendLayout();
             this.grpUpload.SuspendLayout();
             this.SuspendLayout();
@@ -101,7 +102,7 @@
             this.btnFile.Name = "btnFile";
             this.btnFile.Size = new System.Drawing.Size(197, 23);
             this.btnFile.TabIndex = 2;
-            this.btnFile.Text = "Count Words From Text File";
+            this.btnFile.Text = "Select File";
             this.btnFile.UseVisualStyleBackColor = true;
             this.btnFile.Click += new System.EventHandler(this.btnFile_Click);
             // 
@@ -130,6 +131,7 @@
         private System.Windows.Forms.Button btnFile;
         private System.Windows.Forms.ListBox wordsResultList;
         private System.Windows.Forms.ListBox fileResultList;
+        private System.Windows.Forms.OpenFileDialog openFile;
     }
 }
 
