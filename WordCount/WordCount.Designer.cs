@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupTxtBox = new System.Windows.Forms.GroupBox();
+            this.wordsResultList = new System.Windows.Forms.ListBox();
             this.btnWords = new System.Windows.Forms.Button();
             this.txtWords = new System.Windows.Forms.TextBox();
             this.grpUpload = new System.Windows.Forms.GroupBox();
-            this.btnFile = new System.Windows.Forms.Button();
-            this.wordsResultList = new System.Windows.Forms.ListBox();
             this.fileResultList = new System.Windows.Forms.ListBox();
+            this.btnFile = new System.Windows.Forms.Button();
             this.groupTxtBox.SuspendLayout();
             this.grpUpload.SuspendLayout();
             this.SuspendLayout();
@@ -51,6 +51,14 @@
             this.groupTxtBox.TabStop = false;
             this.groupTxtBox.Text = "Text Box";
             // 
+            // wordsResultList
+            // 
+            this.wordsResultList.FormattingEnabled = true;
+            this.wordsResultList.Location = new System.Drawing.Point(24, 220);
+            this.wordsResultList.Name = "wordsResultList";
+            this.wordsResultList.Size = new System.Drawing.Size(197, 69);
+            this.wordsResultList.TabIndex = 2;
+            // 
             // btnWords
             // 
             this.btnWords.Location = new System.Drawing.Point(24, 179);
@@ -59,6 +67,7 @@
             this.btnWords.TabIndex = 1;
             this.btnWords.Text = "Count Words From Text Box";
             this.btnWords.UseVisualStyleBackColor = true;
+            this.btnWords.Click += new System.EventHandler(this.btnWords_Click);
             // 
             // txtWords
             // 
@@ -78,6 +87,14 @@
             this.grpUpload.TabStop = false;
             this.grpUpload.Text = "From File";
             // 
+            // fileResultList
+            // 
+            this.fileResultList.FormattingEnabled = true;
+            this.fileResultList.Location = new System.Drawing.Point(26, 220);
+            this.fileResultList.Name = "fileResultList";
+            this.fileResultList.Size = new System.Drawing.Size(197, 69);
+            this.fileResultList.TabIndex = 3;
+            // 
             // btnFile
             // 
             this.btnFile.Location = new System.Drawing.Point(26, 179);
@@ -86,22 +103,7 @@
             this.btnFile.TabIndex = 2;
             this.btnFile.Text = "Count Words From Text File";
             this.btnFile.UseVisualStyleBackColor = true;
-            // 
-            // wordsResultList
-            // 
-            this.wordsResultList.FormattingEnabled = true;
-            this.wordsResultList.Location = new System.Drawing.Point(24, 220);
-            this.wordsResultList.Name = "wordsResultList";
-            this.wordsResultList.Size = new System.Drawing.Size(197, 69);
-            this.wordsResultList.TabIndex = 2;
-            // 
-            // fileResultList
-            // 
-            this.fileResultList.FormattingEnabled = true;
-            this.fileResultList.Location = new System.Drawing.Point(26, 220);
-            this.fileResultList.Name = "fileResultList";
-            this.fileResultList.Size = new System.Drawing.Size(197, 69);
-            this.fileResultList.TabIndex = 3;
+            this.btnFile.Click += new System.EventHandler(this.btnFile_Click);
             // 
             // WordCount
             // 
