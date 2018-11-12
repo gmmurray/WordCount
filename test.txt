@@ -1,6 +1,1 @@
-hgey my name is greg 
-
-
-
-
-suh dood
+hello there this is a test of the word count windows form application
